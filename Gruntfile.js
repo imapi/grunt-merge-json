@@ -31,7 +31,7 @@ module.exports = function (grunt) {
                 jshintrc: "jshint.json"
             },
             gruntfile:   [ "Gruntfile.js" ],
-            sourcefiles: [ "tasks/grunt-merge-json.js" ]
+            sourcefiles: [ "tasks/grunt-merge-append-json.js" ]
         },
         clean: {
             clean:     [ ],
@@ -44,4 +44,3 @@ module.exports = function (grunt) {
 
     grunt.registerTask("default", [ "jshint" ]);
 };
-

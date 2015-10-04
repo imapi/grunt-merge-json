@@ -28,7 +28,7 @@ module.exports = function (grunt) {
     var chalk = require("chalk");
     var _ = require("lodash");
 
-    grunt.registerMultiTask("merge-json", "Merge Multiple JSON Files", function () {
+    grunt.registerMultiTask("merge-append-json", "Merge Multiple JSON Files", function () {
         /*  prepare options  */
         var options = this.options({
             replacer: null,
@@ -40,7 +40,8 @@ module.exports = function (grunt) {
         this.files.forEach(function (f) {
             try {
                 /*  start with an empty object  */
-                var json = {};
+                var json = f.append ? f.append : {};
+
                 f.src.forEach(function (src) {
                     /*  merge JSON file into object  */
                     if (!grunt.file.exists(src))
@@ -67,4 +68,3 @@ module.exports = function (grunt) {
         });
     });
 };
-

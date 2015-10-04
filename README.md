@@ -1,5 +1,5 @@
 
-# grunt-merge-json
+# grunt-merge-append-json
 
 Grunt Task for Merging Multiple JSON Files
 
@@ -22,14 +22,14 @@ install and use Grunt plugins. Once you're familiar with that process,
 you may install this plugin with this command:
 
 ```shell
-npm install grunt-merge-json --save-dev
+npm install grunt-merge-append-json --save-dev
 ```
 
 Once the plugin has been installed, it may be enabled inside your
 Gruntfile with this line of JavaScript:
 
 ```js
-grunt.loadNpmTasks('grunt-merge-json');
+grunt.loadNpmTasks('grunt-merge-append-json');
 ```
 
 ## Task Options
@@ -39,7 +39,7 @@ grunt.loadNpmTasks('grunt-merge-json');
 
 ## Merge JSON Task
 
-_Run this task with the `grunt merge-json` command._
+_Run this task with the `grunt merge-append-json` command._
 
 Task targets, files and options may be specified according to the Grunt
 [Configuring tasks](http://gruntjs.com/configuring-tasks) guide.
@@ -117,3 +117,16 @@ grunt.initConfig({
 });
 ```
 
+### Just append to JSON file
+
+```js
+grunt.initConfig({
+    "merge-append-json": {
+      "main": {
+          src: [ "foo.json" ],
+          append: {plus_one: 1}
+          dest: "foo.json"
+      }
+    }
+});
+```

@@ -1,25 +1,26 @@
 {
-    "name":        "grunt-merge-json",
-    "homepage":    "http://github.com/rse/grunt-merge-json",
-    "description": "Grunt Task for Merging Multiple JSON Files",
+    "name":        "grunt-merge-append-json",
+    "homepage":    "https://github.com/imapi/grunt-merge-json",
+    "description": "Grunt Task for Merging/Appending Multiple JSON Files",
     "version":     "0.9.5",
     "license":     "MIT",
     "author": {
-        "name":    "Ralf S. Engelschall",
+        "name":    "Ralf S. Engelschall, Ivan Bondarenko",
         "email":   "rse@engelschall.com",
-        "url":     "http://engelschall.com"
+        "url":     "http://engelschall.com, https://github.com/imapi"
     },
     "keywords": [
         "gruntplugin",
         "merge",
+        "append",
         "json"
     ],
     "repository": {
         "type": "git",
-        "url":  "git://github.com/rse/grunt-merge-json.git"
+        "url":  "git://github.com/imapi/grunt-merge-json.git"
     },
     "bugs": {
-        "url":  "http://github.com/rse/grunt-merge-json/issues"
+        "url":  "http://github.com/imapi/grunt-merge-json/issues"
     },
     "main": "Gruntfile.js",
     "devDependencies": {
