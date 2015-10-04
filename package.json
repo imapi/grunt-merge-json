@@ -2,7 +2,7 @@
     "name":        "grunt-merge-append-json",
     "homepage":    "https://github.com/imapi/grunt-merge-json",
     "description": "Grunt Task for Merging/Appending Multiple JSON Files",
-    "version":     "0.9.5",
+    "version":     "0.9.6",
     "license":     "MIT",
     "author": {
         "name":    "Ralf S. Engelschall, Ivan Bondarenko",

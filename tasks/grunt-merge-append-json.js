@@ -44,9 +44,9 @@ module.exports = function (grunt) {
 
                 f.src.forEach(function (src) {
                     /*  merge JSON file into object  */
-                    if (!grunt.file.exists(src))
-                        throw "JSON source file \"" + chalk.red(src) + "\" not found.";
-                    else {
+                    if (!grunt.file.exists(src) && !f.append)
+                        throw "JSON source file \"" + chalk.red(src) + "\" not found and no append data is set.";
+                    else if (grunt.file.exists(src)) {
                         var fragment;
                         grunt.log.debug("reading JSON source file \"" + chalk.green(src) + "\"");
                         try { fragment = grunt.file.readJSON(src); }
